@@ -51,7 +51,7 @@ public class GuestController {
 		}
 	}
 	
-	@RequestMapping(value="insert", method ={RequestMethod.GET, RequestMethod.POST} )
+	@RequestMapping(value="/insert", method ={RequestMethod.GET, RequestMethod.POST} )
 	public String insert(@ModelAttribute GuestVo guVo) {
 		
 		guDao.insert(guVo);
@@ -60,7 +60,7 @@ public class GuestController {
 	}
 	
 	
-	@RequestMapping(value="updateForm", method ={RequestMethod.GET, RequestMethod.POST} )
+	@RequestMapping(value="/updateForm", method ={RequestMethod.GET, RequestMethod.POST} )
 	public String updateForm(@RequestParam("no") int no, Model model) {
 		
 		
@@ -69,7 +69,7 @@ public class GuestController {
 		return "updateForm";
 	}
 	
-	@RequestMapping(value="update", method ={RequestMethod.GET, RequestMethod.POST} )
+	@RequestMapping(value="/update", method ={RequestMethod.GET, RequestMethod.POST} )
 	public String update(@ModelAttribute GuestVo guVo) {
 		
 		guDao.update(guVo);

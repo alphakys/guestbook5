@@ -49,6 +49,9 @@
 	
 	</insert>
 
+
+
+	 
 	<select id = "selectOne" parameterType="int" resultType="GuestVo">
 	
 		<![CDATA[
@@ -78,7 +81,6 @@
 	
 	
 	</update>
-
-
+	
 </mapper>
 
